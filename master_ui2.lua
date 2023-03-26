@@ -2258,7 +2258,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 
 	Elements.Visible = true
 
-	wait(20)
+	wait(1.2)
 	TweenService:Create(LoadingFrame.Title, TweenInfo.new(0.5, Enum.EasingStyle.Quint), {TextTransparency = 1}):Play()
 	TweenService:Create(LoadingFrame.Subtitle, TweenInfo.new(0.5, Enum.EasingStyle.Quint), {TextTransparency = 1}):Play()
 	TweenService:Create(LoadingFrame.Version, TweenInfo.new(0.5, Enum.EasingStyle.Quint), {TextTransparency = 1}):Play()
@@ -2288,7 +2288,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 	TweenService:Create(Topbar.ChangeSize, TweenInfo.new(0.7, Enum.EasingStyle.Quint), {ImageTransparency = 0.8}):Play()
 	wait(0.1)
 	TweenService:Create(Topbar.Hide, TweenInfo.new(0.7, Enum.EasingStyle.Quint), {ImageTransparency = 0.8}):Play()
-	wait(0.3)
+	wait(10)
 	
 	return Window
 end

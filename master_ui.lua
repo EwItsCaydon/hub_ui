@@ -2771,7 +2771,7 @@ function Library:credit(options)
 	
 		if options.Discord then
 			local discordContainer = creditContainer:object("TextButton", {
-				AnchorPoint = Vector2.new(1, 9),
+				AnchorPoint = Vector2.new(1, 1),
 				Size = UDim2.fromOffset(24, 24),
 				Position = UDim2.new(1, -8, 1, -8),
 				BackgroundColor3 = Color3.fromRGB(88, 101, 242)
@@ -2784,7 +2784,7 @@ function Library:credit(options)
 
 			local tr = discord:object("ImageLabel", {
 				BackgroundTransparency = 1,
-				AnchorPoint = Vector2.new(1, 0),
+				AnchorPoint = Vector2.new(3, 0),
 				Size = UDim2.new(0.5, 0, 0.5, 0),
 				Position = UDim2.new(1, 0, 0, -0),
 				ImageColor3 = Color3.fromRGB(255, 255, 255),

@@ -2771,7 +2771,7 @@ function Library:credit(options)
 	
 		if options.Discord then
 			local discordContainer = creditContainer:object("TextButton", {
-				AnchorPoint = Vector2.new(1, 3),
+				AnchorPoint = Vector2.new(1, 9),
 				Size = UDim2.fromOffset(24, 24),
 				Position = UDim2.new(1, -8, 1, -8),
 				BackgroundColor3 = Color3.fromRGB(88, 101, 242)

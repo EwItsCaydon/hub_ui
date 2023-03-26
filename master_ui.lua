@@ -2744,7 +2744,7 @@ function Library:credit(options)
 
 	local creditContainer = (self.creditsContainer or self.container):object("Frame", {
 		Theme = {BackgroundColor3 = "Secondary"},
-		Size = UDim2.new(1, -20, 0, 52)
+		Size = UDim2.new(1, -20, 0, 40)
 	}):round(7)
 
 	local name = creditContainer:object("TextLabel", {
@@ -2796,7 +2796,7 @@ function Library:credit(options)
 			local discordContainer = creditContainer:object("TextButton", {
 				AnchorPoint = Vector2.new(1, 1),
 				Size = UDim2.fromOffset(24, 24),
-				Position = UDim2.new(4, -4, 1, -4),
+				Position = UDim2.new(1, -4, 1, -4),
 				BackgroundColor3 = Color3.fromRGB(88, 101, 242)
 			}):round(5):tooltip("copy discord")
 			local discord = discordContainer:object("Frame", {

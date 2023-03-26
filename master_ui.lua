@@ -2796,7 +2796,7 @@ function Library:credit(options)
 			local discordContainer = creditContainer:object("TextButton", {
 				AnchorPoint = Vector2.new(1, 1),
 				Size = UDim2.fromOffset(24, 24),
-				Position = UDim2.new(1, -14, 1, -14),
+				Position = UDim2.new(1, -20, 1, -20),
 				BackgroundColor3 = Color3.fromRGB(88, 101, 242)
 			}):round(5):tooltip("copy discord")
 			local discord = discordContainer:object("Frame", {

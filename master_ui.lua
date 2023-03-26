@@ -697,7 +697,7 @@ function Library:create(options)
 		BackgroundTransparency = 1,
 		Position = UDim2.new(0, 5, 0.5, 0),
 		Size = UDim2.new(0, 15, 0, 15),
-		Image = "http://www.roblox.com/asset/?id=8569322835",
+		Image = "rbxassetid://12902068169",
 		Theme = {ImageColor3 = "StrongText"}
 	})
 
@@ -797,7 +797,7 @@ function Library:create(options)
 	end
 
 	local gameName = profile:object("TextLabel", {
-		Text = "Game: " .. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name,
+		Text = "Loaded: " .. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name,
 		TextScaled = true,
 		Position = UDim2.new(0, 105,0, 47),
 		Theme = {TextColor3 = "Tertiary"},

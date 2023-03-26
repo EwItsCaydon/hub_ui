@@ -917,8 +917,8 @@ function Library:create(options)
 
 	rawset(mt, "creditsContainer", creditsTab.container)
 
-	creditsTab:credit{Name = "Caydon", Description = "Founder | Head Script Developer", Discord = "!EwItsCaydon<3#0001 | Discord Id: 883711443835420743"}
-	--creditsTab:credit{Name = "Astro", Description = "Co-Owner | Script Developer", Discord = "!Astro#8865 | Discord Id:223982984162836480"}
+	creditsTab:credit{Name = "Caydon", Description = "Founder | Head Script Developer"}
+	--creditsTab:credit{Name = "Astro", Description = "Co-Owner | Script Developer"}
 	return mt
 end
 
@@ -2800,14 +2800,14 @@ function Library:credit(options)
 				Centered = true,
 				BackgroundTransparency = 1
 			})
-            --[[
+
 			local tr = discord:object("ImageLabel", {
 				BackgroundTransparency = 1,
 				AnchorPoint = Vector2.new(1, 0),
 				Size = UDim2.new(0.5, 0, 0.5, 0),
 				Position = UDim2.new(1, 0, 0, -0),
 				ImageColor3 = Color3.fromRGB(255, 255, 255),
-				Image = "rbxassetid://12902475083",
+				Image = "http://www.roblox.com/asset/?id=8594150191",
 				ScaleType = Enum.ScaleType.Crop
 			})
 
@@ -2817,7 +2817,7 @@ function Library:credit(options)
 				Size = UDim2.new(0.5, 0, 0.5, 0),
 				Position = UDim2.new(0, 0, 0, -0),
 				ImageColor3 = Color3.fromRGB(255, 255, 255),
-				Image = "rbxassetid://12902475083",
+				Image = "http://www.roblox.com/asset/?id=8594187532",
 				ScaleType = Enum.ScaleType.Crop
 			})
 
@@ -2827,10 +2827,9 @@ function Library:credit(options)
 				Size = UDim2.new(0.5, 0, 0.5, 0),
 				Position = UDim2.new(0, 0, 1, 0),
 				ImageColor3 = Color3.fromRGB(255, 255, 255),
-				Image = "rbxassetid://12902475083",
+				Image = "http://www.roblox.com/asset/?id=8594194954",
 				ScaleType = Enum.ScaleType.Crop
 			})
-            --]]
             
 			local br = discord:object("ImageLabel", {
 				BackgroundTransparency = 1,
@@ -2838,7 +2837,7 @@ function Library:credit(options)
 				Size = UDim2.new(0.5, 0, 0.5, 0),
 				Position = UDim2.new(1, 0, 1, 0),
 				ImageColor3 = Color3.fromRGB(255, 255, 255),
-				Image = "rbxassetid://12902475083",
+				Image = "http://www.roblox.com/asset/?id=8594206483",
 				ScaleType = Enum.ScaleType.Crop
 			})
 

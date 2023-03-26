@@ -2800,13 +2800,13 @@ function Library:credit(options)
 				Centered = true,
 				BackgroundTransparency = 1
 			})
-
+            --[[
 			local tr = discord:object("ImageLabel", {
 				BackgroundTransparency = 1,
 				AnchorPoint = Vector2.new(1, 0),
 				Size = UDim2.new(0.5, 0, 0.5, 0),
 				Position = UDim2.new(1, 0, 0, -0),
-				--ImageColor3 = Color3.fromRGB(255, 255, 255),
+				ImageColor3 = Color3.fromRGB(255, 255, 255),
 				Image = "rbxassetid://12902475083",
 				ScaleType = Enum.ScaleType.Crop
 			})
@@ -2816,7 +2816,7 @@ function Library:credit(options)
 				AnchorPoint = Vector2.new(0, 0),
 				Size = UDim2.new(0.5, 0, 0.5, 0),
 				Position = UDim2.new(0, 0, 0, -0),
-				--ImageColor3 = Color3.fromRGB(255, 255, 255),
+				ImageColor3 = Color3.fromRGB(255, 255, 255),
 				Image = "rbxassetid://12902475083",
 				ScaleType = Enum.ScaleType.Crop
 			})
@@ -2826,17 +2826,18 @@ function Library:credit(options)
 				AnchorPoint = Vector2.new(0, 1),
 				Size = UDim2.new(0.5, 0, 0.5, 0),
 				Position = UDim2.new(0, 0, 1, 0),
-				--ImageColor3 = Color3.fromRGB(255, 255, 255),
+				ImageColor3 = Color3.fromRGB(255, 255, 255),
 				Image = "rbxassetid://12902475083",
 				ScaleType = Enum.ScaleType.Crop
 			})
-
+            --]]
+            
 			local br = discord:object("ImageLabel", {
 				BackgroundTransparency = 1,
 				AnchorPoint = Vector2.new(1, 1),
 				Size = UDim2.new(0.5, 0, 0.5, 0),
 				Position = UDim2.new(1, 0, 1, 0),
-				--ImageColor3 = Color3.fromRGB(255, 255, 255),
+				ImageColor3 = Color3.fromRGB(255, 255, 255),
 				Image = "rbxassetid://12902475083",
 				ScaleType = Enum.ScaleType.Crop
 			})

@@ -2744,7 +2744,7 @@ function Library:credit(options)
 
 	local creditContainer = (self.creditsContainer or self.container):object("Frame", {
 		Theme = {BackgroundColor3 = "Secondary"},
-		Size = UDim2.new(1, -20, 0, 40)
+		Size = UDim2.new(1, -10, 0, 52)
 	}):round(7)
 
 	local name = creditContainer:object("TextLabel", {

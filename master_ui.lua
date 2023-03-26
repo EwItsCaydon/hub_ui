@@ -796,8 +796,8 @@ function Library:create(options)
 		Library.DisplayName = displayName
 	end
 
-	local profileName = profile:object("TextLabel", {
-		Text = "@" .. LocalPlayer.Name,
+	local gameName = profile:object("TextLabel", {
+		Text = "@" .. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name,
 		TextScaled = true,
 		Position = UDim2.new(0, 105,0, 47),
 		Theme = {TextColor3 = "Tertiary"},

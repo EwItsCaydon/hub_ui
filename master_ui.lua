@@ -2807,7 +2807,7 @@ function Library:credit(options)
 				Size = UDim2.new(0.5, 0, 0.5, 0),
 				Position = UDim2.new(1, 0, 0, -0),
 				ImageColor3 = Color3.fromRGB(255, 255, 255),
-				Image = "http://www.roblox.com/asset/?id=8594150191",
+				Image = "rbxassetid://12902475083",
 				ScaleType = Enum.ScaleType.Crop
 			})
 
@@ -2817,7 +2817,7 @@ function Library:credit(options)
 				Size = UDim2.new(0.5, 0, 0.5, 0),
 				Position = UDim2.new(0, 0, 0, -0),
 				ImageColor3 = Color3.fromRGB(255, 255, 255),
-				Image = "http://www.roblox.com/asset/?id=8594187532",
+				Image = "rbxassetid://12902475083",
 				ScaleType = Enum.ScaleType.Crop
 			})
 
@@ -2827,7 +2827,7 @@ function Library:credit(options)
 				Size = UDim2.new(0.5, 0, 0.5, 0),
 				Position = UDim2.new(0, 0, 1, 0),
 				ImageColor3 = Color3.fromRGB(255, 255, 255),
-				Image = "http://www.roblox.com/asset/?id=8594194954",
+				Image = "rbxassetid://12902475083",
 				ScaleType = Enum.ScaleType.Crop
 			})
 
@@ -2837,7 +2837,7 @@ function Library:credit(options)
 				Size = UDim2.new(0.5, 0, 0.5, 0),
 				Position = UDim2.new(1, 0, 1, 0),
 				ImageColor3 = Color3.fromRGB(255, 255, 255),
-				Image = "http://www.roblox.com/asset/?id=8594206483",
+				Image = "rbxassetid://12902475083",
 				ScaleType = Enum.ScaleType.Crop
 			})
 

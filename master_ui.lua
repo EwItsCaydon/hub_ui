@@ -16,6 +16,25 @@ local is_discord_helper = false;
 local is_founder = false;
 local is_discord_mod = false;
 
+local user_type_text = nil
+
+if is_paid_user then
+    user_type_text = "Premium User"
+else if is_hub_influencer then
+    user_type_text = "Script Influencer"
+else if is_discord_admin then
+    user_type_text = "Discord Admin"
+else if is_discord_helper then
+    user_type_text = "Discord Helper" 
+else if is_discord_mod then
+    user_type_text = "Discord Moderator"
+else if is_founder then
+    user_type_text = "Script Founder"
+else if is_script_developer then
+    user_type_text = "Script Developer"
+else user_type_text = "Free User"
+end
+
 local Library = {
 	Themes = {
 		Legacy = {
@@ -784,25 +803,6 @@ function Library:create(options)
 		BackgroundTransparency = 1,
 		TextXAlignment = Enum.TextXAlignment.Left
 	})
-
-    local user_type_text = nil
-
-    if is_paid_user then
-        user_type_text = "Premium User"
-    else if is_hub_influencer then
-        user_type_text = "Script Influencer"
-    else if is_discord_admin then
-        user_type_text = "Discord Admin"
-    else if is_discord_helper then
-        user_type_text = "Discord Helper" 
-    else if is_discord_mod then
-        user_type_text = "Discord Moderator"
-    else if is_founder then
-        user_type_text = "Script Founder"
-    else if is_script_developer then
-        user_type_text = "Script Developer"
-    else user_type_text = "Free User"
-    end
 
 	local timeDisplay = profile:object("TextLabel", {
 		BackgroundTransparency = 1,

@@ -1,4 +1,4 @@
---Our script hub ui library. This is a edited version of Mercury Library. (not originally made by us)
+--Our script hub ui library. This is a edited version of Mercury Library. (not originally made by me)
 
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
@@ -8,15 +8,13 @@ local LocalPlayer = Players.LocalPlayer
 local Mouse = LocalPlayer:GetMouse()
 local HTTPService = game:GetService("HttpService")
 
-local is_paid_user = false;
-local is_hub_influencer = false;
-local is_discord_admin = false;
-local is_script_developer = false;
-local is_discord_helper = false;
-local is_founder = false;
-local is_discord_mod = false;
-
-local user_type_text = nil
+local is_paid_user = false
+local is_hub_influencer = false
+local is_discord_admin = false
+local is_discord_helper = false
+local is_discord_mod = false
+local is_founder = false
+local is_script_developer = false
 
 if is_paid_user then
     user_type_text = "Premium User"
@@ -40,6 +38,8 @@ end
 end
 end
 end
+
+
 
 local Library = {
 	Themes = {
@@ -820,7 +820,19 @@ function Library:create(options)
 		TextXAlignment = Enum.TextXAlignment.Left,
 		Text = user_type_text
 	})
-end
+
+	do
+		local desiredInterval = 1
+		local counter = 0
+		RunService.Heartbeat:Connect(function(step)
+			counter += step  
+			if counter >= desiredInterval then
+				counter -= desiredInterval
+				local date = tostring(os.date("%X"))
+				timeDisplay.Text = date:sub(1, date:len()-3)
+			end
+		end)
+	end
 
 	local settingsTabIcon = profile:object("ImageButton", {
 		BackgroundTransparency = 1,
